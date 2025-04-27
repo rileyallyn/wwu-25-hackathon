@@ -17,6 +17,9 @@ importers:
       '@sveltejs/adapter-cloudflare':
         specifier: ^5.0.1
         version: 5.1.0(@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1)))(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1)))(wrangler@4.13.2(@cloudflare/workers-types@4.20250427.0))
+      '@sveltejs/adapter-netlify':
+        specifier: ^5.0.0
+        version: 5.0.0(@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1)))(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1)))
       '@sveltejs/kit':
         specifier: ^2.16.0
         version: 2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1)))(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1))
@@ -671,6 +674,9 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
+  '@iarna/toml@2.2.5':
+    resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
@@ -933,6 +939,11 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       wrangler: ^3.87.0 || ^4.0.0
+
+  '@sveltejs/adapter-netlify@5.0.0':
+    resolution: {integrity: sha512-if2JvVHuQWRG9V2A3P8CrbB+qo0qLFvpIu2Nb/sbMqoejDL+4kuzT4WPA7dUgruAF0Hj/AAGpxaJedgNd6ZENw==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.4.0
 
   '@sveltejs/kit@2.20.7':
     resolution: {integrity: sha512-dVbLMubpJJSLI4OYB+yWYNHGAhgc2bVevWuBjDj8jFUXIJOAnLwYP3vsmtcgoxNGUXoq0rHS5f7MFCsryb6nzg==}
@@ -2492,6 +2503,8 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
+  '@iarna/toml@2.2.5': {}
+
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
       '@img/sharp-libvips-darwin-arm64': 1.0.4
@@ -2690,6 +2703,13 @@ snapshots:
       esbuild: 0.24.2
       worktop: 0.8.0-next.18
       wrangler: 4.13.2(@cloudflare/workers-types@4.20250427.0)
+
+  '@sveltejs/adapter-netlify@5.0.0(@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1)))(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1)))':
+    dependencies:
+      '@iarna/toml': 2.2.5
+      '@sveltejs/kit': 2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1)))(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1))
+      esbuild: 0.24.2
+      set-cookie-parser: 2.7.1
 
   '@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1)))(svelte@5.28.2)(vite@6.3.3(jiti@1.21.7)(yaml@2.7.1))':
     dependencies:
